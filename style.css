@@ -1,0 +1,467 @@
+/* ================================
+GLOBAL STYLE
+================================ */
+
+html{
+scroll-behavior:smooth;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+transition:background-color .3s,color .3s;
+}
+
+body{
+background:#f4f8ff;
+color:#333;
+}
+
+section{
+padding:100px 20px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+/* ================================
+NAVBAR
+================================ */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#fff;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.logo{
+font-size:20px;
+font-weight:600;
+color:#4da3ff;
+}
+
+.menu{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.menu a:hover{
+color:#4da3ff;
+}
+
+/* ================================
+BUTTON
+================================ */
+
+.btn-primary{
+background:#4da3ff;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+}
+
+.btn-primary:hover{
+background:#3b8be0;
+}
+
+.btn-outline{
+border:2px solid #4da3ff;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+color:#4da3ff;
+}
+
+/* ================================
+HERO
+================================ */
+
+.hero{
+height:95vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(135deg,#cfe8ff,#eaf4ff);
+}
+
+.hero h1{
+font-size:52px;
+font-weight:700;
+}
+
+.hero h1 span{
+color:#4da3ff;
+}
+
+.hero p{
+margin:20px 0;
+font-size:18px;
+color:#555;
+}
+
+/* ================================
+SECTION TITLE
+================================ */
+
+.section-title{
+text-align:center;
+font-size:32px;
+}
+
+.section-subtitle{
+text-align:center;
+color:#777;
+}
+
+/* ================================
+ABOUT
+================================ */
+
+.about{
+background:white;
+}
+
+.about-wrapper{
+display:flex;
+align-items:center;
+gap:50px;
+}
+
+.about-image img{
+width:280px;
+border-radius:12px;
+}
+
+.about-info{
+margin-top:30px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.info-card{
+background:#f1f6ff;
+padding:20px;
+border-radius:8px;
+}
+
+/* ================================
+SKILLS
+================================ */
+
+.skills{
+background:#e8f1ff;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.skill-card,
+.project-card{
+background:white;
+border-radius:12px;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+transition:.3s;
+}
+
+.skill-card:hover,
+.project-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.skill-icon{
+width:50px;
+margin-bottom:15px;
+}
+
+/* ================================
+PROJECT
+================================ */
+
+.projects{
+background:#f4f6fb;
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+margin-top:50px;
+}
+
+.project-image{
+width:100%;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.project-card h3{
+margin-bottom:10px;
+color:#222;
+}
+
+.project-card p{
+color:#555;
+line-height:1.6;
+}
+
+/* ================================
+COUNTER
+================================ */
+
+.counter-section{
+text-align:center;
+padding:60px 20px;
+}
+
+.counter-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:24px;
+margin:24px 0;
+}
+
+#angka-counter{
+font-size:72px;
+font-weight:bold;
+color:#2E74B5;
+min-width:100px;
+}
+
+.counter-btn{
+width:56px;
+height:56px;
+border-radius:50%;
+border:2px solid #2E74B5;
+background:white;
+font-size:28px;
+cursor:pointer;
+color:#2E74B5;
+}
+
+.counter-btn:hover{
+background:#2E74B5;
+color:white;
+}
+
+/* ================================
+FORM CONTACT
+================================ */
+
+.form-section{
+padding:60px 20px;
+max-width:500px;
+margin:auto;
+}
+
+.form-container{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.form-container input,
+.form-container textarea{
+padding:12px 16px;
+border:2px solid #ddd;
+border-radius:8px;
+font-size:16px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus{
+outline:none;
+border-color:#2E74B5;
+}
+
+#btn-kirim{
+padding:14px;
+background:#2E74B5;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+#btn-kirim:hover{
+background:#1F4E79;
+}
+
+/* ================================
+FORM FEEDBACK
+================================ */
+
+.feedback{
+padding:12px 16px;
+border-radius:8px;
+font-size:14px;
+}
+
+.feedback.error{
+background:#FEE2E2;
+color:#DC2626;
+border:1px solid #FECACA;
+}
+
+.feedback.success{
+background:#DCFCE7;
+color:#16A34A;
+border:1px solid #BBF7D0;
+}
+
+.hidden{
+display:none;
+}
+
+/* ================================
+CONTACT BUTTON
+================================ */
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-bottom:40px;
+}
+
+.contact-btn{
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.instagram{
+background:#E1306C;
+}
+
+/* ================================
+FOOTER
+================================ */
+
+.footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+/* ================================
+DARK MODE
+================================ */
+
+.dark-btn{
+padding:8px 16px;
+border:2px solid #333;
+border-radius:20px;
+background:transparent;
+cursor:pointer;
+font-size:14px;
+}
+
+.dark-mode{
+background:#1a1a2e;
+color:#e0e0e0;
+}
+
+.dark-mode .navbar{
+background:#16213e;
+}
+
+.dark-mode .hero{
+background:linear-gradient(135deg,#16213e,#1a1a2e);
+}
+
+.dark-mode .skill-card,
+.dark-mode .project-card,
+.dark-mode .info-card{
+background:#16213e;
+color:#e0e0e0;
+}
+
+.dark-mode .menu a{
+color:#e0e0e0;
+}
+
+/* ================================
+RESPONSIVE
+================================ */
+
+@media(max-width:900px){
+
+.navbar{
+padding:20px;
+}
+
+.menu{
+display:none;
+}
+
+.about-wrapper{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}
+/* ================================
+PERBAIKAN DARK MODE TEXT
+================================ */
+
+.dark-mode .about,
+.dark-mode .projects,
+.dark-mode .skills,
+.dark-mode .form-section{
+  background:#1a1a2e;
+  color:#e0e0e0;
+}
+
+.dark-mode p{
+  color:#d1d5db;
+}
+
+.dark-mode .section-title{
+  color:#ffffff;
+}
+
+.dark-mode .section-subtitle{
+  color:#cbd5e1;
+}
+
+.dark-mode .project-card p,
+.dark-mode .about-content p{
+  color:#d1d5db;
+}
